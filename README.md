@@ -5,7 +5,6 @@ Semantic Book is a website created for searching data about books and authors st
 * [Node](https://nodejs.org)
 * [Apache Jena Fuseki](https://jena.apache.org)
 
-
 ## Usage
 
 1. Install pre-requisites
