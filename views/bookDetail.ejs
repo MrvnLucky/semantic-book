@@ -2,28 +2,8 @@
 <html>
   <%- include('partials/head.ejs') %>
   <body>
-    <%- include('layouts/navbar.ejs') %>
-    <!-- <form action="/books" class="input-group mb-3">
-      <input
-        type="search"
-        name="search"
-        id="search"
-        class="form-control"
-        placeholder="Search..."
-        aria-label="Search..."
-        aria-describedby="button-addon2"
-      />
-      <div class="input-group-append">
-        <button
-          class="btn btn-outline-secondary"
-          type="submit"
-          id="button-addon2"
-        >
-          Search
-        </button>
-      </div>
-    </form> -->
-    <% if (data.length>0) { %> <% data.forEach(book=> { %>
+    <%- include('layouts/navbar.ejs') %> <% if (data.length>0) { %> <%
+    data.forEach(book=> { %>
 
     <div class="container mt-3">
       <a href="/">
