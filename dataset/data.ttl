@@ -1,0 +1,181 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix book: <http://example.com/book#> .
+@prefix author: <http://example.com/author#> .
+@prefix genre: <http://example.com/genre#> .
+
+# Books 
+book:B001 
+  book:title        "Harry Potter and the Philosopher's Stone";
+  book:publishYear  "1997";
+  book:description  "Harry Potter lives in a cupboard under the stairs at his aunt and uncle's house. He is bullied by them and his spoilt cousin, and lives a very unremarkable life. But then Harry is transported to a world of magic and excitement.";
+  book:photoURL     "https://www.nzherald.co.nz/resizer/EMOphkyatSReWSs3MOw3gi_p6BI=/1200x0/smart/filters:quality(70)/arc-anglerfish-syd-prod-nzme.s3.amazonaws.com/public/EIQQ5VTKK5BC7DXNWYXZ5YPIEE.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+
+book:B002 
+  book:title        "Harry Potter and the Chamber of Secrets";
+  book:publishYear  "1998";
+  book:description  "Harry Potter is a wizard. He is in his second year at Hogwarts School of Witchcraft and Wizardry. Little does he know that this year will be just as eventful as the last ... even getting there is an adventure in itself! The three firm friends, Harry, Ron and Hermione, are soon immersed in the daily round of Potions, Herbology, Charms, Defence Against the Dark Arts, and Quidditch. But then horrible and mysterious things begin to happen. Harry keeps hearing strange voices, sinister and dark messages appear on the wall, and then Rons sister Ginny disappears ...";
+  book:photoURL     "https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+book:B003 
+  book:title        "Harry Potter and the Prisoner of Azkaban";
+  book:publishYear  "1999";
+  book:description  "During his third year at Hogwarts School for Witchcraft and Wizardry, Harry Potter must confront the devious and dangerous wizard responsible for his parents' deaths";
+  book:photoURL     "https://i.imgur.com/C5hgpn3.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+book:B004
+  book:title        "Harry Potter and the Goblet of Fire";
+  book:publishYear  "2000";
+  book:description  "When the Quidditch World Cup is disrupted by Voldemort's rampaging supporters and the terrifying Dark Mark appears against the night sky, it is obvious to Harry Potter that, far from weakening, Voldemort is getting stronger. Back at Hogwarts for the fourth year Harry is astonished to be chosen to represent the school in the Triwizard Tournament. The competition is dangerous, the tasks terrifying, and true courage is no guarantee of survival - especially with the Dark Lord's forces on the rise.";
+  book:photoURL     "https://harrypotterfanzone.com/wp-content/2009/06/gof-uk-kids-jacket-art.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+book:B005
+  book:title        "Harry Potter and the Order of the Phoenix";
+  book:publishYear  "2003";
+  book:description  "Dumbledore lowered his hands and surveyed Harry through his half-moon glasses. 'It is time,' he said, 'for me to tell you what I should have told you five years ago, Harry. Please sit down. I am going to tell you everything.' Harry Potter is due to start his fifth year at Hogwarts School of Witchcraft and Wizadry. He is desperate to get back to school and find out why his friends Ron and Hermione have been so secretive all summer. However, what Harry is about to discover in his new year at Hogwarts will turn his whole world upside down ... But before he even gets to school, Harry has an unexpected and frightening encounter with two Dementors, has to face a court hearing at the Ministry of Magic and has been escorted on a night-time broomstick ride to the secret headquarters of a mysterious group called 'The Order of the Phoenix'. And that is just the start.";
+  book:photoURL     "https://upload.wikimedia.org/wikipedia/en/7/70/Harry_Potter_and_the_Order_of_the_Phoenix.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+book:006
+  book:title        "Harry Potter and the Half-Blood Prince";
+  book:publishYear  "2005";
+  book:description  "In the previous book, Harry Potter and the Order of the Phoenix, the last chapter, titled 'The Second War Begins,' started: 'In a brief statement on Friday night, Minister for Magic Cornelius Fudge confirmed that He Who Must Not Be Named has returned to this country and is once more active. 'It is with great regret that I must confirm that the wizard styling himself Lord well, you know who I mean is alive and among us again,' said Fudge.' Harry Potter and the Half-Blood Prince, takes up the story of Harry Potter's sixth year at Hogwarts School of Witchcraft and Wizardry at this point as Voldemort's power and followers are increasing day by day, in the midst of this battle of good and evil.";
+  book:photoURL     "https://duskangelreads.files.wordpress.com/2016/07/harry_potter_and_the_half-blood_prince.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+book:B007
+  book:title        "Harry Potter and the Deathly Hallows";
+  book:publishYear  "2007";
+  book:description  "'His hand closed automatically around the fake Horcrux, but in spite of everything, in spite of the dark and twisting path he saw stretching ahead for himself, in spite of the final meeting with Voldemort he knew must come, whether in a month, in a year, or in ten, he felt his heart lift at the thought that there was still one last golden day of peace left to enjoy with Ron and Hermione.' With these words 'Harry Potter and the Half-Blood Prince' draws to a close. And here, in this seventh and final book, Harry discovers what fate truly has in store for him as he inexorably makes his way to that final meeting with Voldemort. In this thrilling climax to the phenomenally bestselling series, J.K. Rowling will reveal all to her eagerly waiting readers.";
+  book:photoURL     "https://covers.openlibrary.org/b/id/8234415-L.jpg";
+  book:author       author:A001;
+  book:genre        genre:G001.
+
+book:B008
+  book:title        "The Great Gatsby";
+  book:publishYear  "1925";
+  book:description  "It is the story of this Jay Gatsby who came so mysteriously to West Egg, of his sumptuous entertainments, and of his love for Daisy Buchanan – a story that ranges from pure lyrical beauty to sheer brutal realism, and is infused with a sense of the strangeness of human circumstance in a heedless universe. It is a magical, living book, blended of irony, romance, and mysticism.";
+  book:photoURL     "https://149352626.v2.pressablecdn.com/wp-content/uploads/2018/02/CK-3-684x1024.jpg";
+  book:author       author:A002;
+  book:genre        genre:G002.
+
+book:B009
+  book:title        "Crazy Rich Asians";
+  book:publishYear  "2013";
+  book:description  "When Rachel Chu agrees to spend the summer in Singapore with her boyfriend, Nicholas Young, she envisions a humble family home, long drives to explore the island, and quality time with the man she might one day marry. What she doesn't know is that Nick's family home happens to look like a palace, that she'll ride in more private planes than cars, and that with one of Asia's most eligible bachelors on her arm, Rachel might as well have a target on her back. Initiated into a ...";
+  book:photoURL     "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526735379l/18158562._SY475_.jpg";
+  book:author       author:A003;
+  book:genre        genre:G003.
+
+book:B010
+  book:title        "China Rich Girlfriend";
+  book:publishYear  "2015";
+  book:description  "On the eve of her wedding to Nicholas Young, heir to one of the greatest fortunes in Asia, Rachel should be over the moon. She has a flawless Asscher-cut diamond from JAR, a wedding dress she loves more than anything found in the salons of Paris, and a fiance willing to sacrifice his entire inheritance in order to marry her. But Rachel still mourns the fact that her birthfather, a man she never knew, won't be able to walk her down the aisle. Until: a shocking revelation draws Rachel into a world of Shanghai splendour beyond anything she has ever imagined.";
+  book:photoURL     "https://m.media-amazon.com/images/I/41xsiJ8NmdL.jpg";
+  book:author       author:A003;
+  book:genre        genre:G003.
+
+book:B011
+  book:title        "Rich People Problems";
+  book:publishYear  "2017";
+  book:description  "When Nicholas Young hears that his grandmother, Su Yi, is on her deathbed, he rushes to be by her bedside--but he's not alone. The entire Shang-Young clan has convened from all corners of the globe to stake claim on their matriarch's massive fortune. With each family member vying to inherit Tyersall Park--a trophy estate on 64 prime ...";
+  book:photoURL     "https://www.penguin.co.uk/content/dam/prh/books/111/1119451/9781786091086.jpg.transform/PRHDesktopWide_small/image.jpg";
+  book:author       author:A003;
+  book:genre        genre:G003.
+
+book:B012
+  book:title        "Life of Pi";
+  book:publishYear  "2001";
+  book:description  "Piscine Molitor Patel, nicknamed Pi, lives in Pondicherry, India, where his family runs a zoo. Little Pi is a great reader. He devours books on Hinduism, Christianity and Islam, and to the surprise of his secular parents, becomes devoted to all three religions. When the parents decide to emigrate to Canada, the family boards a cargo ship with many of the animals that are going to new zoological homes in North America, and bravely sets sail for the New World. Alas, the ship sinks. A solitary lifeboat remains bobbing on the surface of the wild blue Pacific. In it are five survivors: Pi, a hyena, a zebra, an orang-utan and a 450-pound Royal Bengal tiger.";
+  book:photoURL     "https://emyou.files.wordpress.com/2012/12/life-of-pi-book-cover.jpg";
+  book:author       author:A005;
+  book:genre        genre:G005.
+
+
+book:B013
+  book:title        "The Hunger Games";
+  book:publishYear  "2008";
+  book:description  "In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV. Sixteen-year-old Katniss Everdeen, who lives alone with her mother and younger sister, regards it as a death sentence when she is forced to represent her district in the Games. But Katniss has been close to dead before - and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weigh survival against humanity and life against love.";
+  book:photoURL     "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052.jpg";
+  book:author       author:A004;
+  book:genre        genre:G006.
+
+book:B014
+  book:title        "Catching Fire";
+  book:publishYear  "2009";
+  book:description  "Against all odds, Katniss Everdeen has won the annual Hunger Games with fellow district tribute Peeta Mellark. But it was a victory won by defiance of the Capitol and their harsh rules. Katniss and Peeta should be happy. After all, they have just won for themselves and their families a life of safety and plenty. But there are rumors of rebellion among the subjects, and Katniss and Peeta, to their horror, are the faces of that rebellion. The Capitol is angry. The Capitol wants revenge.";
+  book:photoURL     "https://stateofmind13.files.wordpress.com/2012/03/catching-fire-book-cover.jpg";
+  book:author       author:A004;
+  book:genre        genre:G006.
+
+book:B015
+  book:title        "Mockingjay";
+  book:publishYear  "2010";
+  book:description  "Against all odds, Katniss Everdeen has survived the Hunger Games twice. But now that she's made it out of the bloody arena alive, she's still not safe. The Capitol is angry. The Capitol wants revenge. Who do they think should pay for the unrest? Katniss. And what's worse, President Snow has made it clear that no one else is safe either. Not Katniss's family, not her friends, not the people of District 12. Powerful and haunting, this thrilling final installment of Suzanne Collins's groundbreaking The Hunger Games trilogy promises to be one of the most talked about books of the year.";
+  book:photoURL     "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722918l/7260188._SY475_.jpg";
+  book:author       author:A004;
+  book:genre        genre:G006.
+
+
+# Authors
+author:A001
+  author:name       "J. K. Rowling";
+  author:photoURL   "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg";
+  author:birthday   "July 31, 1965";
+  author:birthplace "Yate, Gloucestershire, England".
+  
+author:A002
+  author:name       "F. Scott Fitzgerald";
+  author:photoURL   "https://upload.wikimedia.org/wikipedia/commons/8/87/F._Scott_Fitzgerald_%281929_photo_portrait_by_Nickolas_Muray%29_Cropped.jpg";
+  author:birthday   "September 24, 1896";
+  author:birthplace "Saint Paul, Minnesota, United States".
+
+author:A003
+  author:name       "Kevin Kwan";
+  author:birthday   "1973/1974";
+  author:birthplace "Singapore".
+  
+
+author:A004
+  author:name       "Suzanne Collins";
+  author:photoURL   "https://upload.wikimedia.org/wikipedia/commons/b/b9/Suzanne_Collins_David_Shankbone_2010.jpg";
+  author:birthday   "August 10, 1962";
+  author:birthplace "Hartford, Connecticut, United States".
+
+author:A005
+  author:name       "Yann Martel";
+  author:photoURL   "https://upload.wikimedia.org/wikipedia/commons/9/97/Yann_martel_2007-10-25_Seattle_WA_USA.jpg";
+  author:birthday   "June 25, 1963";
+  author:birthplace "Salamanca, Spain".
+
+
+# Genre
+genre:G001
+  genre:name        "Fantasy".
+
+genre:G002
+  genre:name        "Historical Fiction".
+
+genre:G003 
+  genre:name        "Romance".
+
+genre:G004
+  genre:name        "Adventure".
+
+genre:G005
+  genre:name        "Psychological Fiction".
+
+genre:G006
+  genre:name        "Dystopian".
+
+

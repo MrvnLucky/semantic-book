@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs') %>
+  <body>
+    <%- include('layouts/navbar.ejs') %>
+    <!-- <form action="/books" class="input-group mb-3">
+      <input
+        type="search"
+        name="search"
+        id="search"
+        class="form-control"
+        placeholder="Search..."
+        aria-label="Search..."
+        aria-describedby="button-addon2"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="submit"
+          id="button-addon2"
+        >
+          Search
+        </button>
+      </div>
+    </form> -->
+    <% if (data.length>0) { %> <% data.forEach(book=> { %>
+
+    <div class="container mt-3">
+      <a href="/">
+        <p class="btn btn-secondary">Back to homepage</p>
+      </a>
+    </div>
+    <div class="container">
+      <div class="col mb-4">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="<%= book.photoURL %> "
+                class="card-img"
+                style="max-width: 300px"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold"><%= book.title %></h5>
+                <p class="card-text"><%= book.description %></p>
+                <p class="card-text">Writer: <%= book.authorName %></p>
+                <p class="card-text">Genre: <%= book.genreName %></p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Published: <%= book.publishYear %>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% });%> <% } else { %> <% } %>
+  </body>
+  <%- include('partials/script.ejs') %>
+</html>

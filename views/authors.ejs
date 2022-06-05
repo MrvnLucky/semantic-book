@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs') %>
+
+   <body>
+    <%- include('layouts/navbar.ejs') %>
+    <div class="container">
+
+
+      <form action="/authors" class="input-group my-3 w-75 mx-auto">
+        <input
+        type="search"
+        name="search"
+        id="search"
+        class="form-control"
+        placeholder="Search..."
+        aria-label="Search..."
+        aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="submit"
+          id="button-addon2"
+        >
+        Search
+      </button>
+    </div>
+  </form>
+</div>
+
+    <div class="container">
+      <div class="card-deck row-cols-md-3">
+        <% if (data.length>0) { %> <% data.forEach(author=> { %>
+          <a href="authors/<%= author.subject.substring(author.subject.indexOf("#")+1) %>">
+            <div class="col mb-4">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="<%= author.photoURL %> " class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%= author.name %></h5>
+                  <p class="card-text"><%= author.birthday %></p>
+                  <!-- <p class="card-text">Birthplace: <%= author.birthplace %></p> -->
+                  <p class="card-text">
+                    <small class="text-muted"
+                    ><%= author.birthplace %>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <% });%> <% } else { %> <% } %>
+  </div>
+</div>
+  </body>
+  <%- include('partials/script.ejs') %>
+</html>

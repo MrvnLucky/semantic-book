@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs') %>
+  <body>
+    <%- include('layouts/navbar.ejs') %>
+    <form action="/" class="input-group mb-3 mt-3 w-50 mx-auto">
+      <input
+        type="search"
+        name="search"
+        id="search"
+        class="form-control"
+        placeholder="Search..."
+        aria-label="Search..."
+        aria-describedby="button-addon2"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          id="button-addon2"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+
+    <div class="container">
+    <div class="card-deck row-cols-md-3">
+      <% if (data.length>0) { %> <% data.forEach(book=> { %>
+        <div class="col mb-2">
+          <div class="card mb-2" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <a href="books/<%= book.subject.substring(book.subject.indexOf("#")+1) %>">
+                <img src="<%= book.photoURL %> " class="card-img" alt="..." />
+              </a>
+              </div>
+              <div class="col-md-8 " >
+                <div class="card-body">
+                  <a href="books/<%= book.subject.substring(book.subject.indexOf("#")+1) %>">
+                  <h5 class="card-title"><%= book.title %></h5>
+                </a>
+                  <a href="/?search=<%= book.authorName %>"> 
+                  <p class="card-text">
+                      Writer: <%= book.authorName %>
+                    </p>
+                  </a>
+                  <a href="/?search=<%= book.genreName %>">
+                  <p class="card-text">
+                      Genre: <%= book.genreName %>
+                    </p>
+                  </a>
+                  <a href="/?search=<%= book.publishYear %>">
+                  <p class="card-text">
+                    <small class="text-muted">
+                        Published: <%= book.publishYear %>
+                      </small>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% });%> <% } else { %> <% } %>
+    </div>
+        </div>
+  </body>
+  <%- include('partials/script.ejs') %>
+</html>

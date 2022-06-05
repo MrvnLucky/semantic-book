@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs') %>
+  <body>
+    <%- include('layouts/navbar.ejs') %> <% if (data.length>0) { %> <%
+    data.forEach(author=> { %>
+
+    <div class="container mt-3">
+      <a href="/authors">
+        <p class="btn btn-secondary">Back to homepage</p>
+      </a>
+    </div>
+    <div class="container">
+      <div class="col mb-4">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="<%= author.photoURL %> "
+                class="card-img"
+                style="max-width: 300px"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold"><%= author.name %></h5>
+                <p class="card-text"><%= author.birthday %></p>
+                <p class="card-text">
+                  <small class="text-muted"><%= author.birthplace %> </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% });%> <% } else { %> <% } %>
+  </body>
+  <%- include('partials/script.ejs') %>
+</html>
